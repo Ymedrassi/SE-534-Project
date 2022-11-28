@@ -29,7 +29,7 @@ class _MessagePageState extends State<MessagePage> {
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: (BorderSide(width: 1.0, color: Colors.blue)),
+                      borderSide: (BorderSide(width: 1.0, color: Colors.grey)),
                       borderRadius: BorderRadius.all(
                         Radius.circular(18),
                       ),

@@ -15,15 +15,31 @@ class _MyHomePageState extends State<MyHomePage> {
   final _inactiveColor = Colors.white;
   @override
   Widget build(BuildContext context) {
-    //final List<NewEntry> ent;
+    final List<NewEntry> ent;
     return Scaffold(
-        // appBar: AppBar(
-        //   automaticallyImplyLeading: false,
-        //   title: Text("Welcome"),
-        //   backgroundColor: Colors.green[200],
-        // ),
+       appBar: AppBar(
+         automaticallyImplyLeading: false,
+         title: Text("Welcome"),
+         backgroundColor: Colors.grey,
+       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              child: Text("Ready 2 Go"),
+            ),
+            ListTile(
+              title: Text("About Us"),
+              onTap: (){},
+            ),
+          ],
+        ),
+      ),
         body: getBody(),
-        bottomNavigationBar: _buildBottomBar());
+        bottomNavigationBar: _buildBottomBar()
+    );
+
   }
 
   Widget _buildBottomBar() {
@@ -52,9 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         BottomNavyBarItem(
           icon: const Icon(Icons.message),
-          title: const Text(
-            'Messages ',
-          ),
+          title: const Text('Messages '),
           activeColor: Colors.amber,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,
@@ -62,6 +76,13 @@ class _MyHomePageState extends State<MyHomePage> {
         BottomNavyBarItem(
           icon: const Icon(Icons.settings),
           title: const Text('Settings'),
+          activeColor: Colors.amber,
+          inactiveColor: _inactiveColor,
+          textAlign: TextAlign.center,
+        ),
+        BottomNavyBarItem(
+          icon: const Icon(Icons.info),
+          title: const Text('About Us'),
           activeColor: Colors.amber,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,
@@ -86,6 +107,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Text(
           "Settings",
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+        ),
+      ),
+      Container(
+        alignment: Alignment.center,
+        child: const Text(
+          "The Ready 2 Go App is helpful for People who want to rental their Car and also for those who want to rent, this App provides an easy & fastest way to book cars.",
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.grey),
         ),
       ),
     ];
