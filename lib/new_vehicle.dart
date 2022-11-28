@@ -57,7 +57,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         labelText: 'Model Name',
                         suffixIcon: Icon(Icons.car_rental_rounded),
                         floatingLabelStyle: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.grey,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
@@ -74,7 +74,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              (BorderSide(width: 1.0, color: Colors.blue)),
+                              (BorderSide(width: 1.0, color: Colors.amber)),
                           borderRadius: BorderRadius.all(
                             Radius.circular(17),
                           ),
@@ -93,7 +93,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         labelText: 'Vehicle Number',
                         suffixIcon: Icon(Icons.numbers_rounded),
                         floatingLabelStyle: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.grey,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
@@ -110,7 +110,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              (BorderSide(width: 1.0, color: Colors.blue)),
+                              (BorderSide(width: 1.0, color: Colors.amber)),
                           borderRadius: BorderRadius.all(
                             Radius.circular(17),
                           ),
@@ -129,7 +129,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         labelText: 'Mobile Number',
                         suffixIcon: Icon(Icons.phone_android_rounded),
                         floatingLabelStyle: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.grey,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
@@ -146,7 +146,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              (BorderSide(width: 1.0, color: Colors.blue)),
+                              (BorderSide(width: 1.0, color: Colors.amber)),
                           borderRadius: BorderRadius.all(
                             Radius.circular(17),
                           ),
@@ -165,7 +165,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         labelText: 'Type',
                         suffixIcon: Icon(Icons.select_all_sharp),
                         floatingLabelStyle: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.grey,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
@@ -182,7 +182,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              (BorderSide(width: 1.0, color: Colors.blue)),
+                              (BorderSide(width: 1.0, color: Colors.amber)),
                           borderRadius: BorderRadius.all(
                             Radius.circular(17),
                           ),
@@ -202,7 +202,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         labelText: 'No.of Seats',
                         suffixIcon: Icon(Icons.chair),
                         floatingLabelStyle: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.grey,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
@@ -219,7 +219,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              (BorderSide(width: 1.0, color: Colors.blue)),
+                              (BorderSide(width: 1.0, color: Colors.amber)),
                           borderRadius: BorderRadius.all(
                             Radius.circular(17),
                           ),
@@ -239,7 +239,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         hintText: 'Price/Day',
                         prefixIcon: Icon(Icons.attach_money),
                         floatingLabelStyle: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.grey,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
@@ -256,7 +256,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              (BorderSide(width: 1.0, color: Colors.blue)),
+                              (BorderSide(width: 1.0, color: Colors.amber)),
                           borderRadius: BorderRadius.all(
                             Radius.circular(17),
                           ),
@@ -275,7 +275,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         labelText: 'Your Location',
                         suffixIcon: Icon(Icons.pin_drop),
                         floatingLabelStyle: TextStyle(
-                            color: Colors.blue,
+                            color: Colors.grey,
                             fontSize: 25,
                             fontWeight: FontWeight.bold),
                         border: OutlineInputBorder(
@@ -292,7 +292,7 @@ class _NewVehicleState extends State<NewVehicle> {
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide:
-                              (BorderSide(width: 1.0, color: Colors.blue)),
+                              (BorderSide(width: 1.0, color: Colors.amber)),
                           borderRadius: BorderRadius.all(
                             Radius.circular(17),
                           ),
@@ -316,7 +316,7 @@ class _NewVehicleState extends State<NewVehicle> {
                       style: ElevatedButton.styleFrom(
                           enableFeedback: false,
                           elevation: 20,
-                          backgroundColor: Colors.blue,
+                          backgroundColor: Colors.grey,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15))),
                     ),

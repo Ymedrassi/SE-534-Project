@@ -79,7 +79,7 @@ class _MyCardState extends State<MyCard> {
     }
 
     return Container(
-      color: Colors.grey[800],
+      color: Colors.white,
       width: double.infinity,
       height: MediaQuery.of(context).size.height * 1,
       margin: EdgeInsets.only(top: 120),

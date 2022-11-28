@@ -3,6 +3,7 @@ import './home_page.dart';
 import './message_page.dart';
 import './custom_animated_bottom_bar.dart';
 import './new_entry.dart';
+import './contact_usPage.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -17,10 +18,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final List<NewEntry> ent;
     return Scaffold(
-       appBar: AppBar(
+        appBar: AppBar(
          automaticallyImplyLeading: false,
          title: Text("Welcome"),
-         backgroundColor: Colors.grey,
+          titleTextStyle:
+          TextStyle(
+              fontSize: 20,
+              fontFamily: 'Foant1',
+              color: Colors.white,
+              fontWeight: FontWeight.bold),
+         backgroundColor: Colors.grey[800],
        ),
       drawer: Drawer(
         child: ListView(
@@ -29,10 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
             DrawerHeader(
               child: Text("Ready 2 Go"),
             ),
-            ListTile(
-              title: Text("About Us"),
-              onTap: (){},
-            ),
+            TextButton(
+                onPressed: onPressed, child: child),
           ],
         ),
       ),
@@ -109,11 +114,14 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
         ),
       ),
-      Container(
-        alignment: Alignment.center,
-        child: const Text(
-          "The Ready 2 Go App is helpful for People who want to rental their Car and also for those who want to rent, this App provides an easy & fastest way to book cars.",
-          style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.grey),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          alignment: Alignment.topLeft,
+          child: const Text(
+            "The Ready 2 Go App is helpful for People who want to rental their Car and also for those who want to rent, this App provides an easy & fastest way to book cars.",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold, color: Colors.black, fontFamily: 'Font3'),
+          ),
         ),
       ),
     ];

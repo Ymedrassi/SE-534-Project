@@ -1,9 +1,9 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:se_534_project/carpage.dart';
 import 'package:se_534_project/home_page.dart';
 import './login_screen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -61,7 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
               alignment: Alignment.bottomCenter,
               width: double.infinity,
               child: Text(
-                'Ready\"2\"GO',
+                'Ready \"2\" GO',
                 style: TextStyle(
                     fontFamily: 'Font2',
                     color: Colors.white,

@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           ),
           elevation: 80,
           splashColor: Colors.black,
-          backgroundColor: Colors.grey[100],
+          backgroundColor: Colors.white,
           foregroundColor: Colors.black,
         ),
         resizeToAvoidBottomInset: false,
@@ -74,7 +74,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     prefixIcon: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+
+                        },
                         icon: Icon(Icons.roundabout_left_rounded)),
                     suffixIcon: IconButton(
                         onPressed: clear, icon: Icon(Icons.pin_drop_rounded))),
