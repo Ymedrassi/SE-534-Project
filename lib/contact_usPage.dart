@@ -33,7 +33,16 @@ class _contactUsState extends State<contactUs> {
 
     ),
       body:
-      Text(""),
+      Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Container(
+          alignment: Alignment.topLeft,
+          child: const Text(
+            "You Can Reach Us By: \n\nPhone:0555550690 \n\nE-mail: Ready2Go@gmail.com",
+            style: TextStyle(fontSize: 25,  color: Colors.black, fontFamily: 'Font3'),
+          ),
+        ),
+      ),
 
 
       drawer: Drawer(
@@ -51,7 +60,12 @@ class _contactUsState extends State<contactUs> {
               ),
             ),
             ListTile(
-              title:Text("Home"),
+              title:Text("Home",
+                style: TextStyle(
+                  fontSize:20,
+                  letterSpacing: 1,
+
+                ),),
 
               onTap: (){
                 final route=MaterialPageRoute(builder: (context)=>MyHomePage());

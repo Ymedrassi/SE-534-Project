@@ -18,42 +18,46 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final List<NewEntry> ent;
     return Scaffold(
-
         appBar: AppBar(
          automaticallyImplyLeading: false,
          title: Text("Welcome"),
-          centerTitle: true,
           titleTextStyle:
           TextStyle(
               fontSize: 20,
               fontFamily: 'Foant1',
               color: Colors.white,
               fontWeight: FontWeight.bold),
-              backgroundColor: Colors.grey[800],
+         backgroundColor: Colors.grey[800],
+       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              child: Text("Ready 2 Go",
+                style: TextStyle(
+                  fontSize:20,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1,
 
+                ),),
+            ),
+            ListTile(
+              title:Text("Contact Us",
+                style: TextStyle(
+                  fontSize:20,
+                  letterSpacing: 1,
 
-    ),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              DrawerHeader(
-                child: Text("Ready 2 Go"),
-              ),
-              ListTile(
-                title:Text("Contact Us"),
+                ),),
 
-                onTap: (){
-                  final route=MaterialPageRoute(builder: (context)=>contactUs());
-                  Navigator.push(context, route);
-                },
-              ),
-
-
-            ],
-          ),
+              onTap: (){
+                final route=MaterialPageRoute(builder: (context)=>contactUs());
+                Navigator.push(context, route);
+              },
+            ),
+          ],
         ),
-
+      ),
         body: getBody(),
         bottomNavigationBar: _buildBottomBar()
     );
@@ -144,4 +148,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-//ssss
