@@ -18,29 +18,42 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final List<NewEntry> ent;
     return Scaffold(
+
         appBar: AppBar(
          automaticallyImplyLeading: false,
          title: Text("Welcome"),
+          centerTitle: true,
           titleTextStyle:
           TextStyle(
               fontSize: 20,
               fontFamily: 'Foant1',
               color: Colors.white,
               fontWeight: FontWeight.bold),
-         backgroundColor: Colors.grey[800],
-       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              child: Text("Ready 2 Go"),
-            ),
-            TextButton(
-                onPressed: onPressed, child: child),
-          ],
+              backgroundColor: Colors.grey[800],
+
+
+    ),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              DrawerHeader(
+                child: Text("Ready 2 Go"),
+              ),
+              ListTile(
+                title:Text("Contact Us"),
+
+                onTap: (){
+                  final route=MaterialPageRoute(builder: (context)=>contactUs());
+                  Navigator.push(context, route);
+                },
+              ),
+
+
+            ],
+          ),
         ),
-      ),
+
         body: getBody(),
         bottomNavigationBar: _buildBottomBar()
     );
