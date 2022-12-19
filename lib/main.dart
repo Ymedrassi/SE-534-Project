@@ -4,10 +4,10 @@ import 'package:se_534_project/carpage.dart';
 import 'package:se_534_project/home_page.dart';
 import './login_screen.dart';
 
-
 void main() {
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

@@ -301,7 +301,42 @@ class _NewVehicleState extends State<NewVehicle> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 10, left: 10),
+                    margin: EdgeInsets.only(top: 8),
+                    padding: EdgeInsets.all(10),
+                    child: TextField(
+                      keyboardType: TextInputType.text,
+                      textInputAction: TextInputAction.done,
+                      decoration: InputDecoration(
+                        labelText: 'Picture Of Your Car',
+                        suffixIcon: Icon(Icons.add_a_photo),
+                        floatingLabelStyle: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(17),
+                          ),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                          (BorderSide(width: 1.0, color: Colors.black)),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(17),
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide:
+                          (BorderSide(width: 1.0, color: Colors.amber)),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(17),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 0, left: 10),
                     width: MediaQuery.of(context).size.width * 0.5,
                     height: MediaQuery.of(context).size.height * 0.075,
                     child: ElevatedButton(

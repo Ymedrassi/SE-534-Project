@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:se_534_project/book_page.dart';
 import 'package:se_534_project/home_page.dart';
 
 class CarPage extends StatefulWidget {
@@ -350,7 +351,11 @@ class _CarPageState extends State<CarPage> {
                       width: MediaQuery.of(context).size.width * 0.5,
                       height: MediaQuery.of(context).size.height * 0.075,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context, MaterialPageRoute(builder: (context) => BookCarPage()));
+
+                        },
                         child: Text(
                           'Book Now',
                           style: TextStyle(

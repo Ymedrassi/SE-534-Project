@@ -35,6 +35,10 @@
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+  firebase_core: ^2.4.0
+  cloud_firestore: ^4.2.0
+  camera: ^0.10.0+4
+  flutter_local_notifications: ^1.4.4
   cupertino_icons: ^1.0.2
   fluttericon: ^2.0.0
   community_material_icon: ^5.9.55
